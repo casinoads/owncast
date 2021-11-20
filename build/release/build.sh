@@ -24,7 +24,7 @@ BUILD_TEMP_DIRECTORY="$(mktemp -d)"
 cd $BUILD_TEMP_DIRECTORY
 
 echo "Cloning owncast into $BUILD_TEMP_DIRECTORY..."
-git clone https://github.com/owncast/owncast 2> /dev/null
+git clone https://github.com/UFAPRO888s/owncast 2> /dev/null
 cd owncast
 
 echo "Changing to branch: $GIT_BRANCH"
