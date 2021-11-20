@@ -68,6 +68,8 @@ Owncast is an open source, self-hosted, decentralized, single user live video st
 <!-- GETTING STARTED -->
 
 docker build -t ufaproufax/ufaxlive .
+docker pull -t ufaproufax/ufaxlive .
+docker push ufaproufax/ufaxlive:latest
 docker run -p 8080:8080 -p 1935:1935 -it ufaproufax/ufaxlive:latest
 
 ## Getting Started
