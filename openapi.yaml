@@ -2,7 +2,7 @@ openapi: 3.0.1
 info:
   title: UFAX LIVE
   description: รวมโชว์ถอดหมด เอ็กซ์ เสียว  ทุกรูปแบบ ไม่ว่าจะเป็น คู่เทพ สวิงกิงค์ โชว์เสียว รวมนางแบบ พริตตี้ XX รับประกันระดับพรีเมียม
-  version: '0.0.10-dev'
+  version: '0.0.10'
   contact:
     name: UFAX LIVE
     email: ufapro888.pnck@gmail.com
