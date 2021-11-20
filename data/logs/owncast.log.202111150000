@@ -65,3 +65,8 @@ time="2021-11-21T00:18:41+07:00" level=info msg="Video transcoder started using 
 time="2021-11-21T00:18:42+07:00" level=info msg="RTMP is accepting inbound streams on port 1935."
 time="2021-11-21T00:18:42+07:00" level=info msg="Web server is listening on IP 0.0.0.0 port 8080."
 time="2021-11-21T00:18:42+07:00" level=info msg="The web admin interface is available at /admin."
+time="2021-11-21T00:21:44+07:00" level=info msg="UFAX LIVE v0.0.11-dev (20211121)"
+time="2021-11-21T00:21:44+07:00" level=info msg="Video transcoder started using x264 with 1 stream variants."
+time="2021-11-21T00:21:44+07:00" level=info msg="RTMP is accepting inbound streams on port 1935."
+time="2021-11-21T00:21:44+07:00" level=info msg="Web server is listening on IP 0.0.0.0 port 8080."
+time="2021-11-21T00:21:44+07:00" level=info msg="The web admin interface is available at /admin."
