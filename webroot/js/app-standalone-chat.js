@@ -67,7 +67,7 @@ export default class StandaloneChat extends Component {
     fetch(URL_CONFIG)
       .then((response) => {
         if (!response.ok) {
-          throw new Error(`Network response was not ok ${response.ok}`);
+          throw new Error(`การตอบสนองของเครือข่าย ไม่ดี ${response.ok}`);
         }
         return response.json();
       })
@@ -84,7 +84,7 @@ export default class StandaloneChat extends Component {
     fetch(URL_STATUS)
       .then((response) => {
         if (!response.ok) {
-          throw new Error(`Network response was not ok ${response.ok}`);
+          throw new Error(`การตอบสนองของเครือข่าย ไม่ดี ${response.ok}`);
         }
         return response.json();
       })
@@ -93,7 +93,7 @@ export default class StandaloneChat extends Component {
       })
       .catch((error) => {
         this.handleOfflineMode();
-        this.handleNetworkingError(`Stream status: ${error}`);
+        this.handleNetworkingError(`UFAX LIVE Stream status: ${error}`);
       });
   }
 

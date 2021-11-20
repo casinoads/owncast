@@ -29,22 +29,22 @@ type Defaults struct {
 // GetDefaults will return default configuration values.
 func GetDefaults() Defaults {
 	return Defaults{
-		Name:                 "Owncast",
-		Title:                "My Owncast Server",
-		Summary:              "This is brief summary of whom you are or what your stream is. You can edit this description in the admin.",
-		ServerWelcomeMessage: "",
-		Logo:                 "logo.svg",
+		Name:                 "UFAX LIVE",
+		Title:                "SEXY LIVE SERVER",
+		Summary:              "รวมโชว์ถอดหมด เอ็กซ์ เสียว  ทุกรูปแบบ ไม่ว่าจะเป็น คู่เทพ สวิงกิงค์ โชว์เสียว รวมนางแบบ พริตตี้ XX รับประกันระดับพรีเมียม",
+		ServerWelcomeMessage: "ปฎิทินไลฟ์สดกลุ่มลับนางแบบ โชว์ถอดหมด เอ็กซ์ เสียว  ทุกรูปแบบ",
+		Logo:                 "logo.png",
 		Tags: []string{
-			"owncast",
-			"streaming",
+			"UFAX LIVE",
+			"ufapro888s",
 		},
 
-		PageBodyContent: "# This is your page content that can be edited from the admin.",
+		PageBodyContent: "# UFAX LIVE รวมโชว์ถอดหมด เอ็กซ์ เสียว  ทุกรูปแบบ ไม่ว่าจะเป็น คู่เทพ สวิงกิงค์ โชว์เสียว รวมนางแบบ พริตตี้ XX รับประกันระดับพรีเมียม",
 
 		DatabaseFilePath: "data/owncast.db",
 
 		YPEnabled: false,
-		YPServer:  "https://directory.owncast.online",
+		YPServer:  "https://ufapro888s.info/",
 
 		WebServerPort:  8080,
 		WebServerIP:    "0.0.0.0",

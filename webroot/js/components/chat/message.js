@@ -58,9 +58,7 @@ export default function Message(props) {
     const isModerator = checkIsModerator(message);
     if (isModerator) {
       const contents = html`<div class="rounded-lg bg-gray-700 p-3">
-        <img src="/img/moderator.svg" class="moderator-flag" />You are now a
-        moderator.
-      </div>`;
+        <img src="/img/moderator.svg" class="moderator-flag" />ตอนนี้คุณได้สิิทธิ์เป็น ผู้ดูแลแชท.</div>`;
       return html`<${SystemMessage} contents=${contents} />`;
     }
   } else {

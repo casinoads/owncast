@@ -106,7 +106,7 @@ class ModeratorMenu extends Component {
   }
 
   async handleHideMessage() {
-    if (!confirm('Are you sure you want to remove this message from chat?')) {
+    if (!confirm('คุณแน่ใจหรือว่าต้องการลบข้อความนี้ออกจากแชท?')) {
       this.props.onDismiss();
       return;
     }
@@ -134,7 +134,7 @@ class ModeratorMenu extends Component {
   }
 
   async handleBanUser() {
-    if (!confirm('Are you sure you want to remove this user from chat?')) {
+    if (!confirm('คุณแน่ใจหรือว่าต้องการลบผู้ใช้รายนี้ออกจากแชท?')) {
       this.props.onDismiss();
       return;
     }

@@ -9,7 +9,7 @@ function SocialIcon(props) {
   const iconSupplied = !!icon
   const name = platform;
 
-  const finalIcon = iconSupplied ? icon : '/img/platformlogos/default.svg';
+  const finalIcon = iconSupplied ? icon : '/img/platformlogos/default.png';
 
   const style = `background-image: url(${finalIcon});`
 

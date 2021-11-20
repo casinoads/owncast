@@ -85,7 +85,7 @@ export default class VideoOnly extends Component {
     fetch(URL_CONFIG)
       .then((response) => {
         if (!response.ok) {
-          throw new Error(`Network response was not ok ${response.ok}`);
+          throw new Error(`การตอบสนองของเครือข่าย ไม่ดี ${response.ok}`);
         }
         return response.json();
       })
@@ -102,7 +102,7 @@ export default class VideoOnly extends Component {
     fetch(URL_STATUS)
       .then((response) => {
         if (!response.ok) {
-          throw new Error(`Network response was not ok ${response.ok}`);
+          throw new Error(`การตอบสนองของเครือข่าย ไม่ดี ${response.ok}`);
         }
         return response.json();
       })
@@ -111,13 +111,13 @@ export default class VideoOnly extends Component {
       })
       .catch((error) => {
         this.handleOfflineMode();
-        this.handleNetworkingError(`Stream status: ${error}`);
+        this.handleNetworkingError(`UFAX LIVE Stream status: ${error}`);
       });
 
     // Ping the API to let them know we're an active viewer
     fetch(URL_VIEWER_PING).catch((error) => {
       this.handleOfflineMode();
-      this.handleNetworkingError(`Viewer PING error: ${error}`);
+      this.handleNetworkingError(`ข้อผิดพลาด Connecting ของผู้ชม: ${error}`);
     });
   }
 

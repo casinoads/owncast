@@ -380,7 +380,7 @@ export default class Chat extends Component {
   updateDocumentTitle() {
     const num =
       this.numMessagesSinceBlur > 10 ? '10+' : this.numMessagesSinceBlur;
-    window.document.title = `${num} 💬 :: ${this.props.instanceTitle}`;
+    window.document.title = `${num} 💬 🔛 :: ${this.props.instanceTitle}`;
   }
 
   render(props, state) {

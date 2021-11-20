@@ -56,9 +56,9 @@ export default class ChatMessageView extends Component {
     if (!formattedMessage) {
       return null;
     }
-    const formattedTimestamp = `Sent at ${formatTimestamp(timestamp)}`;
+    const formattedTimestamp = `ส่งโดย ${formatTimestamp(timestamp)}`;
     const userMetadata = createdAt
-      ? `${displayName} first joined ${formatTimestamp(createdAt)}`
+      ? `${displayName} เข้าร่วม UFAX LIVE ${formatTimestamp(createdAt)}`
       : null;
 
     const isSystemMessage = message.type === SOCKET_MESSAGE_TYPES.SYSTEM;
@@ -67,7 +67,7 @@ export default class ChatMessageView extends Component {
       ? { color: '#fff' }
       : { color: textColorForHue(displayColor) };
     const backgroundStyle = isSystemMessage
-      ? { backgroundColor: '#667eea' }
+      ? { backgroundColor: '#f0f0f0' }
       : { backgroundColor: messageBubbleColorForHue(displayColor) };
     const messageClassString = isSystemMessage
       ? 'message flex flex-row items-start p-4 m-2 rounded-lg shadow-l border-solid border-indigo-700 border-2 border-opacity-60 text-l'
@@ -178,7 +178,7 @@ function formatTimestamp(sentAt) {
   let diffInDays = getDiffInDaysFromNow(sentAt);
   if (diffInDays >= 1) {
     return (
-      `at ${sentAt.toLocaleDateString('en-US', {
+      `at ${sentAt.toLocaleDateString('th-TH', {
         dateStyle: 'medium',
       })} at ` + sentAt.toLocaleTimeString()
     );

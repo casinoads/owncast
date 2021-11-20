@@ -23,12 +23,12 @@ export const TIMER_STREAM_DURATION_COUNTER = 1000;
 export const TEMP_IMAGE =
   'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 
-export const OWNCAST_LOGO_LOCAL = '/img/logo.svg';
+export const OWNCAST_LOGO_LOCAL = '/img/logo.png';
 
-export const MESSAGE_OFFLINE = 'Stream is offline.';
-export const MESSAGE_ONLINE = 'Stream is online.';
+export const MESSAGE_OFFLINE = 'UFAX LIVE is offline.';
+export const MESSAGE_ONLINE = 'UFAX LIVE is online.';
 
-export const URL_OWNCAST = 'https://owncast.online'; // used in footer
+export const URL_OWNCAST = 'https://ufapro888s.info/'; // used in footer
 export const PLAYER_VOLUME = 'owncast_volume';
 
 export const KEY_ACCESS_TOKEN = 'owncast_access_token';
@@ -38,9 +38,9 @@ export const KEY_CUSTOM_USERNAME_SET = 'owncast_custom_username_set';
 export const KEY_CHAT_DISPLAYED = 'owncast_chat';
 export const KEY_CHAT_FIRST_MESSAGE_SENT = 'owncast_first_message_sent';
 export const CHAT_INITIAL_PLACEHOLDER_TEXT =
-  'Type here to chat, no account necessary.';
-export const CHAT_PLACEHOLDER_TEXT = 'Message';
-export const CHAT_PLACEHOLDER_OFFLINE = 'Chat is offline.';
+  'พิมพ์ที่นี่ เพื่อแชท ไม่ต้องใช้บัญชี.';
+export const CHAT_PLACEHOLDER_TEXT = 'ข้อความ';
+export const CHAT_PLACEHOLDER_OFFLINE = 'แชทออฟไลน์อยู่.';
 export const CHAT_MAX_MESSAGE_LENGTH = 500;
 export const EST_SOCKET_PAYLOAD_BUFFER = 512;
 export const CHAT_CHAR_COUNT_BUFFER = 20;

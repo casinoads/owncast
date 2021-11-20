@@ -4,7 +4,12 @@
     <img src="https://owncast.online/images/logo.png" alt="Logo" width="200">
   </a>
 </p>
-
+4:53:27 PM: Going to submit sitemap to google
+4:53:27 PM:  --> URL: https://www.google.com/ping?sitemap=https://ufatop1.net/sitemap.xml
+4:53:27 PM: Going to submit sitemap to bing
+4:53:27 PM:  --> URL: https://www.bing.com/ping?sitemap=https://ufatop1.net/sitemap.xml
+4:53:27 PM: Going to submit sitemap to yandex
+4:53:27 PM:  --> URL: https://webmaster.yandex.ru/ping?sitemap=https://ufatop1.net/sitemap.xml
 <br/>
 
   <p align="center">

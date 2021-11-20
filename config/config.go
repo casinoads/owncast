@@ -45,7 +45,7 @@ func GetCommit() string {
 
 // DefaultForbiddenUsernames are a list of usernames forbidden from being used in chat.
 var DefaultForbiddenUsernames = []string{
-	"owncast", "operator", "admin", "system",
+	"ufax", "operator", "admin", "system", "ufapro888s", "ufapro888", "ufapro",
 }
 
 // MaxSocketPayloadSize is the maximum payload we will allow to to be received via the chat socket.
@@ -57,5 +57,5 @@ func GetReleaseString() string {
 	var buildPlatform = BuildPlatform
 	var gitCommit = GetCommit()
 
-	return fmt.Sprintf("Owncast v%s-%s (%s)", versionNumber, buildPlatform, gitCommit)
+	return fmt.Sprintf("UFAX LIVE v%s-%s (%s)", versionNumber, buildPlatform, gitCommit)
 }

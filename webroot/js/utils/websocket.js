@@ -76,7 +76,7 @@ export default class Websocket {
     // Sanity check that what we're sending is a valid type.
     if (!message.type || !SOCKET_MESSAGE_TYPES[message.type]) {
       console.warn(
-        `Outbound message: Unknown socket message type: "${message.type}" sent.`
+        `ข้อความขาออก: ประเภทข้อความซ็อกเก็ตที่ไม่รู้จัก: "${message.type}" sent.`
       );
     }
 
@@ -165,7 +165,7 @@ export default class Websocket {
       }
 
       if (!model.type) {
-        console.error('No type provided', model);
+        console.error('ไม่มีประเภทให้', model);
         return;
       }
 
@@ -188,7 +188,7 @@ export default class Websocket {
 
   handleNetworkingError(error) {
     console.error(
-      `Chat has been disconnected and is likely not working for you. It's possible you were removed from chat. If this is a server configuration issue, visit troubleshooting steps to resolve. https://owncast.online/docs/troubleshooting/#chat-is-disabled: ${error}`
+      `แชทถูกตัดการเชื่อมต่อและมีแนวโน้มว่าจะใช้งานไม่ได้สำหรับคุณ เป็นไปได้ว่าคุณถูกลบออกจากแชท หากนี่คือปัญหาการกำหนดค่าเซิร์ฟเวอร์ ไปที่ขั้นตอนการแก้ไขปัญหาเพื่อแก้ไข ติดต่อ: https://ufapro888s.info/ ${error}`
     );
   }
 }
