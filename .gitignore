@@ -19,22 +19,4 @@
 vendor/
 
 #owncast specific
-/config*.yaml
-/stats.json
-owncast
-webroot/thumbnail.jpg
-webroot/preview.gif
-webroot/hls
-webroot/static/content.md
-hls/
-dist/
-data/
-transcoder.log
-owncast.log*
-chat.db
-.yp.key
-backup/
-!webroot/js/web_modules/**/dist
-!core/data
-test/test.db
-test/automated/browser/screenshots
+

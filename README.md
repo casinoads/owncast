@@ -1,67 +1,3 @@
-<br />
-<p align="center">
-  <a href="https://github.com/owncast/owncast" alt="Owncast">
-    <img src="https://owncast.online/images/logo.png" alt="Logo" width="200">
-  </a>
-</p>
-4:53:27 PM: Going to submit sitemap to google
-4:53:27 PM:  --> URL: https://www.google.com/ping?sitemap=https://ufatop1.net/sitemap.xml
-4:53:27 PM: Going to submit sitemap to bing
-4:53:27 PM:  --> URL: https://www.bing.com/ping?sitemap=https://ufatop1.net/sitemap.xml
-4:53:27 PM: Going to submit sitemap to yandex
-4:53:27 PM:  --> URL: https://webmaster.yandex.ru/ping?sitemap=https://ufatop1.net/sitemap.xml
-<br/>
-
-  <p align="center">
-    <strong>Take control over your content and stream it yourself.</strong>
-    <br />
-    <a href="http://owncast.online"><strong>Explore the docs »</strong></a>
-    <br />
-    <a href="https://watch.owncast.online/">View Demo</a>
-    ·
-    <a href="https://broadcast.owncast.online/">Use Our Server for Testing</a>
-    ·
-    <a href="https://owncast.online/faq/">FAQ</a>
-    ·
-    <a href="https://github.com/owncast/owncast/issues">Report Bug</a>
-  </p>
-</p>
-
-<!-- TABLE OF CONTENTS -->
-
-## Table of Contents
-
-- [About the Project](#about-the-project)
-- [Getting Started](#getting-started)
-- [Use with your broadcasting software](#use-with-your-existing-broadcasting-software)
-- [Building from source](#building-from-source)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
-
-<p align="center">
-  <a href="https://owncast.online/images/owncast-splash.png">
-    <img src="https://owncast.online/images/owncast-splash.png" width="70%">
-  </a>
-</p>
-
-Owncast is an open source, self-hosted, decentralized, single user live video streaming and chat server for running your own live streams similar in style to the large mainstream options.  It offers complete ownership over your content, interface, moderation and audience. <a href="https://watch.owncast.online">Visit the demo</a> for an example.
-
-<div>
-    <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/owncast/owncast/total?style=for-the-badge">
-    <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/gabekangas/owncast?style=for-the-badge">
-    <a href="https://github.com/owncast/owncast/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">
-      <img alt="GitHub issues by-label" src="https://img.shields.io/github/issues-raw/owncast/owncast/good%20first%20issue?style=for-the-badge">
-    </a>
-    <a href="https://opencollective.com/owncast">
-      <img alt="Open Collective backers and sponsors" src="https://img.shields.io/opencollective/all/owncast?style=for-the-badge">
-    </a>
-</div>
-
 
 ---
 
@@ -75,67 +11,25 @@ docker run -p 8080:8080 -p 1935:1935 -it ufaproufax/ufaxlive:latest
 docker run -p 8080:8080 -p 1935:1935 --name ufalive -it ufaproufax/ufaxlive:latest
 
 ## Getting Started
-
-The goal is to have a single service that you can run and it works out of the box. **Visit the [Quickstart](https://owncast.online/docs/quickstart/) to get up and running.**
-
-## Use with your existing broadcasting software
-
-In general Owncast is compatible with any software that uses `RTMP` to broadcast to a remote server. `RTMP` is what all the major live streaming services use, so if you’re currently using one of those it’s likely that you can point your existing software at your Owncast instance instead.
-
-OBS, Streamlabs, Restream and many others have been used with Owncast. [Read more about compatibility with existing software](https://owncast.online/docs/broadcasting/).
-
-## Building from Source
-
-1. Ensure you have the gcc compiler configured.
-1. Install the [Go toolchain](https://golang.org/dl/) (1.16 or above).
-1. Clone the repo. `git clone https://github.com/owncast/owncast`
-1. `go run main.go` will run from source.
-1. Point your [broadcasting software](https://owncast.online/docs/broadcasting/) at your new server and start streaming.
-
-There is also a supplied `Dockerfile` so you can spin it up from source with little effort. [Read more about running from source](https://owncast.online/docs/building/).
-
-### Bundling in latest admin from source
-
-The admin ui is built at: https://github.com/owncast/owncast-admin it is bundled into the final binary using pkger.
-
-To bundle in the latest admin UI:
-
-1. From the owncast directory run the packager script: `./build/admin/bundleAdmin.sh`
-1. Compile or run like above. `go run main.go`
-
-## Contributing
-
-Owncast is a growing open source project that is giving freedom, flexibility and fun to live streamers.
-And while we have a small team of kind, talented and thoughtful volunteers, we have gaps in our skillset that we’d love to fill so we can get even better at building tools that make a difference for people.
-
-We abide by our [Code of Conduct](https://owncast.online/contribute/) and feel strongly about open, appreciative, and empathetic people joining us.
-We’ve been very lucky to have this so far, so maybe you can help us with your skills and passion, too!
-
-There is a larger, more detailed, and more up-to-date [guide for helping contribute to Owncast on our website](https://owncast.online/help/).
-
-### Architecture
-
-Owncast consists of two repositories with two standalone projects. [The repo you're looking at now](https://github.com/owncast/owncast) is the core repository with the backend and frontend.  [owncast/owncast-admin](https://github.com/owncast/owncast-admin) is an additional web project that is built separately and used for configuration and management of an Owncast server.
-
-### Suggestions when working with the Owncast codebase
-
-1. Install [golangci-lint](https://golangci-lint.run/usage/install/) for helpful warnings and suggestions [directly in your editor](https://golangci-lint.run/usage/integrations/) when writing Go.
-1. If using VSCode install the [lit-html](https://marketplace.visualstudio.com/items?itemName=bierner.lit-html) extension to aid in syntax highlighting of our frontend HTML + Preact.
-1. Run the project with `go run main.go`.
+ffmpeg -reconnect 1 -reconnect_at_eof 1 -reconnect_streamed 1 -reconnect_delay_max 2  -re -y -i 'https://redirector.googlevideo.com/videoplayback?expire=1637448826&ei=GiiZYfizA5iWir4Pu7ygwA0&ip=154.30.182.36&id=o-AI8yIyFyuyklsbynPBPSBjcLOr9pUMFfffAhccVn_gkl&itag=22&source=youtube&requiressl=yes&mh=Ti&mm=31%2C26&mn=sn-q4fl6nsd%2Csn-vgqsknlk&ms=au%2Conr&mv=u&mvi=1&pl=21&vprv=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=849.711&lmt=1637225068245055&mt=1637426523&fvip=1&fexp=24001373%2C24007246&c=ANDROID&txp=5311224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRgIhAOYOJH_6xSyL_AzYBXE8Hye2z5zH7gjJ7Fr5lcRDGVxZAiEAkPs3ofOV3i9IsIl482DEs_wH9qWxg1uINjrDpY6fYsE%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl&lsig=AG3C_xAwRgIhAOFwByqUTQoH_Wk7NEPjducD46MnwbPGEbp2rN2abcIoAiEAylfBciGu2TLif9G0gx8F2h4uz9b_RNpV4kDjue5XmZc%3D&title=Bigo+live+hot+girl+Thailand+dance+sexy+no+bra+%7C+Bigo+live+sexy+girl+%7C+Bigo+live+18%2B' -c:a copy -ac 1 -ar 44100 -b:a 96k -vcodec libx264 -pix_fmt yuv420p -tune zerolatency -f flv -maxrate 2000k -preset veryfast 'rtmp://ufaxlive.cleverapps.io:1935/live/abc123'
 
 
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- CONTACT -->
-
-## Contact
-
-Project chat: [Join us on Rocket.Chat](https://owncast.rocket.chat/home) if you want to contribute, follow along, or if you have questions.
-
-Gabe Kangas - [@gabek@mastodon.social](https://mastodon.social/@gabek) - email [gabek@real-ity.com](mailto:gabek@real-ity.com)
-
-Project Link: [https://github.com/owncast/owncast](https://github.com/owncast/owncast)
+/config*.yaml
+/stats.json
+owncast
+webroot/thumbnail.jpg
+webroot/preview.gif
+webroot/hls
+webroot/static/content.md
+hls/
+dist/
+data/
+transcoder.log
+owncast.log*
+chat.db
+.yp.key
+backup/
+!webroot/js/web_modules/**/dist
+!core/data
+test/test.db
+test/automated/browser/screenshots

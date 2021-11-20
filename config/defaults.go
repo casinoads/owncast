@@ -33,7 +33,7 @@ func GetDefaults() Defaults {
 		Title:                "SEXY LIVE SERVER",
 		Summary:              "รวมโชว์ถอดหมด เอ็กซ์ เสียว  ทุกรูปแบบ ไม่ว่าจะเป็น คู่เทพ สวิงกิงค์ โชว์เสียว รวมนางแบบ พริตตี้ XX รับประกันระดับพรีเมียม",
 		ServerWelcomeMessage: "ปฎิทินไลฟ์สดกลุ่มลับนางแบบ โชว์ถอดหมด เอ็กซ์ เสียว  ทุกรูปแบบ",
-		Logo:                 "img/logo.png",
+		Logo:                 "logo.png",
 		Tags: []string{
 			"UFAX LIVE",
 			"ufapro888s",
