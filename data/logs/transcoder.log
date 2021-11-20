@@ -5,7 +5,7 @@ Command line:
 /usr/local/bin/ffmpeg -hide_banner -loglevel warning -fflags +genpts -i pipe:0 -map v:0 -c:v:0 libx264 -b:v:0 1008k -maxrate:v:0 1078k -g:v:0 72 -keyint_min:v:0 72 -r:v:0 24 -x264-params:v:0 "scenecut=0:open_gop=0" -bufsize:v:0 504k -profile:v:0 high -map "a:0?" -c:a:0 copy -preset veryfast -var_stream_map "v:0,a:0 " -f hls -hls_time 3 -hls_list_size 3 -hls_flags program_date_time+independent_segments -segment_format_options "mpegts_flags=mpegts_copyts=1" -tune zerolatency -pix_fmt yuv420p -sc_threshold 0 -master_pl_name stream.m3u8 -strftime 1 -hls_segment_filename "http://127.0.0.1:62344/%v/stream-offline%s.ts" -max_muxing_queue_size 400 -method PUT -http_persistent 0 "http://127.0.0.1:62344/%v/stream.m3u8"
 Input #0, mpegts, from 'pipe:0':
   Duration: N/A, start: 1.439333, bitrate: N/A
-  Program 1 
+  Program 1
     Metadata:
       service_name    : Owncast Offline
       service_provider: FFmpeg
@@ -27,7 +27,8 @@ Output #0, hls, to 'http://127.0.0.1:62344/%v/stream.m3u8':
     Side data:
       cpb: bitrate max/min/avg: 1078000/0/1008000 buffer size: 504000 vbv_delay: N/A
   Stream #0:1(eng): Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, 113 kb/s
-frame=    2 fps=0.0 q=22.0 size=N/A time=00:00:00.34 bitrate=N/A dup=1 drop=0 speed=35.9x    [hls @ 0x7f8f19012600] Opening 'http://127.0.0.1:62344/0/stream-offline1637428722.ts' for writing
+frame=    2 fps=0.0 q=22.0 size=N/A time=00:00:00.34 bitrate=N/A dup=1 drop=0 speed=35.9x
+[hls @ 0x7f8f19012600] Opening 'http://127.0.0.1:62344/0/stream-offline1637428722.ts' for writing
 [hls @ 0x7f8f19012600] Opening 'http://127.0.0.1:62344/0/stream.m3u8' for writing
 [hls @ 0x7f8f19012600] Opening 'http://127.0.0.1:62344/stream.m3u8' for writing
 [hls @ 0x7f8f19012600] Opening 'http://127.0.0.1:62344/0/stream-offline1637428722.ts' for writing
