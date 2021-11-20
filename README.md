@@ -72,6 +72,8 @@ docker pull -t ufaproufax/ufaxlive .
 docker push ufaproufax/ufaxlive:latest
 docker run -p 8080:8080 -p 1935:1935 -it ufaproufax/ufaxlive:latest
 
+docker run -p 8080:8080 -p 1935:1935 --name ufalive -it ufaproufax/ufaxlive:latest
+
 ## Getting Started
 
 The goal is to have a single service that you can run and it works out of the box. **Visit the [Quickstart](https://owncast.online/docs/quickstart/) to get up and running.**

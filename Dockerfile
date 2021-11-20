@@ -5,7 +5,7 @@ ADD . /build
 WORKDIR /build
 RUN apk update && apk add --no-cache gcc build-base linux-headers
 
-ARG VERSION=dev
+ARG VERSION=0.0.11
 ENV VERSION=${VERSION}
 ARG GIT_COMMIT
 ENV GIT_COMMIT=${GIT_COMMIT}
