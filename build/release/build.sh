@@ -104,15 +104,15 @@ fi
 
 # Docker build
 # Must authenticate first: https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-docker-for-use-with-github-packages#authenticating-to-github-packages
-DOCKER_IMAGE="server-live-ufax"
+DOCKER_IMAGE="ufaxlive"
 echo "Building Docker image ${DOCKER_IMAGE}..."
 
 # Change to the root directory of the repository
 cd $(git rev-parse --show-toplevel)
 
 # Docker build
-docker build --build-arg NAME=docker --build-arg VERSION=${VERSION} -t ufaproufax/server-live-ufax:latest -t server-live-ufax .
+docker build --build-arg NAME=docker --build-arg VERSION=${VERSION} -t ufaproufax/ufaxlive:latest -t ufaxlive .
 
 # Dockerhub
 # You must be authenticated via `docker login` with your Dockerhub credentials first.
-docker push "ufaproufax/server-live-ufax:${VERSION}"
+docker push "ufaproufax/ufaxlive:${VERSION}"
