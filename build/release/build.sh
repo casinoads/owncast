@@ -71,7 +71,7 @@ build() {
 
   pushd dist/${NAME} >> /dev/null
 
-  CGO_ENABLED=1 ~/go/bin/xgo --branch ${GIT_BRANCH} -ldflags "-s -w -X github.com/owncast/owncast/config.GitCommit=${GIT_COMMIT} -X github.com/owncast/owncast/config.BuildVersion=${VERSION} -X github.com/owncast/owncast/config.BuildPlatform=${NAME}" -targets "${OS}/${ARCH}" github.com/owncast/owncast
+  CGO_ENABLED=1 ~/go/bin/xgo --branch ${GIT_BRANCH} -ldflags "-s -w -X github.com/UFAPRO888s/owncast/config.GitCommit=${GIT_COMMIT} -X github.com/UFAPRO888s/owncast/config.BuildVersion=${VERSION} -X github.com/UFAPRO888s/owncast/config.BuildPlatform=${NAME}" -targets "${OS}/${ARCH}" github.com/owncast/owncast
   mv owncast-*-${ARCH} owncast
 
   zip -r -q -8 ../owncast-$VERSION-$NAME.zip .
@@ -98,7 +98,7 @@ git tag -a "v${VERSION}" -m "Release build v${VERSION}"
 
 # On macOS open the Github page for new releases so they can be uploaded
 if test -f "/usr/bin/open"; then
-  open "https://github.com/owncast/owncast/releases/new"
+  open "https://github.com/UFAPRO888s/owncast/releases/new"
   open dist
 fi
 
