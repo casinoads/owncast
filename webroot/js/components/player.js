@@ -34,7 +34,7 @@ const VIDEO_OPTIONS = {
   sources: [VIDEO_SRC],
 };
 
-export const POSTER_DEFAULT = `/img/logo.png`;
+export const POSTER_DEFAULT = `https://ufabetlive.netlify.app/live-sexy.png`;
 export const POSTER_THUMB = `/thumbnail.jpg`;
 
 class OwncastPlayer {

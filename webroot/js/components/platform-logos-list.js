@@ -9,7 +9,8 @@ function SocialIcon(props) {
   const iconSupplied = !!icon
   const name = platform;
 
-  const finalIcon = iconSupplied ? icon : '/img/platformlogos/default.png';
+  //const finalIcon = iconSupplied ? icon : '/img/platformlogos/default.png';
+  const finalIcon = iconSupplied ? icon : 'https://ufabetlive.netlify.app/live-sexy.png';
 
   const style = `background-image: url(${finalIcon});`
 
