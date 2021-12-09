@@ -34,3 +34,8 @@ backup/
 !core/data
 test/test.db
 test/automated/browser/screenshots
+
+
+docker run -p 8080:8080 -p 1935:1935 -it ufaproufax/cast:latest
+
+docker run -v `pwd`/data:/app/data -p 8080:8080 -p 1935:1935 -it ufaproufax/cast:latest
