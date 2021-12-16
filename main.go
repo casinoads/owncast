@@ -5,15 +5,15 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/owncast/owncast/logging"
+	"github.com/UFAPRO888s/owncast/logging"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/owncast/owncast/config"
-	"github.com/owncast/owncast/core"
-	"github.com/owncast/owncast/core/data"
-	"github.com/owncast/owncast/metrics"
-	"github.com/owncast/owncast/router"
-	"github.com/owncast/owncast/utils"
+	"github.com/UFAPRO888s/owncast/config"
+	"github.com/UFAPRO888s/owncast/core"
+	"github.com/UFAPRO888s/owncast/core/data"
+	"github.com/UFAPRO888s/owncast/metrics"
+	"github.com/UFAPRO888s/owncast/router"
+	"github.com/UFAPRO888s/owncast/utils"
 )
 
 var dbFile = flag.String("database", "", "Path to the database file.")
