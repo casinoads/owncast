@@ -1,0 +1,4 @@
+docker run -p 8080:8080 -p 1935:1935 --name ufalive -it ufaxlive1:latest
+docker run -p 8080:8080 -p 1935:1935 --name ufalive -it ufaproufax/ufaxlive1:latest
+
+docker run --rm -e GRAB_URL='https://www.youtube.com/watch?v=p_TD5eh4RcA" -e RTMP_URL="rtmp://b7f4-182-53-105-106.ngrok.io:1935/live/abc123' -e LANGUAGE='en' -e V_BITRATE='3000K' -e A_BITRATE='128K'

@@ -31,15 +31,16 @@ func GetDefaults() Defaults {
 	return Defaults{
 		Name:                 "UFAX LIVE",
 		Title:                "SEXY LIVE SERVER",
-		Summary:              "รวมโชว์ถอดหมด เอ็กซ์ เสียว  ทุกรูปแบบ ไม่ว่าจะเป็น คู่เทพ สวิงกิงค์ โชว์เสียว รวมนางแบบ พริตตี้ XX รับประกันระดับพรีเมียม",
-		ServerWelcomeMessage: "ปฎิทินไลฟ์สดกลุ่มลับนางแบบ โชว์ถอดหมด เอ็กซ์ เสียว  ทุกรูปแบบ",
+		Summary:              "UFABET คาสิโน 18+ แทงบอลกำไรดี มีพริตตี้ไลฟ์สดโชว์",
+		ServerWelcomeMessage: "เว็บแทงบอล UFAPRO888 แห่งนี้ไม่ได้มีดีแค่การเดิมพัน พนันออนไลน์ อย่างเดียว ทางเราได้เพิ่มบริการพิเศษเข้าไปอีก 1 บริการ คือการสมัครเข้า กลุ่มลับพริตตี้ไลฟ์สด20+",
 		Logo:                 "logo.png",
 		Tags: []string{
-			"UFAX LIVE",
+			"UFAXLIVE",
 			"ufapro888s",
+      "ufabet",
 		},
 
-		PageBodyContent: "# UFAX LIVE รวมโชว์ถอดหมด เอ็กซ์ เสียว  ทุกรูปแบบ ไม่ว่าจะเป็น คู่เทพ สวิงกิงค์ โชว์เสียว รวมนางแบบ พริตตี้ XX รับประกันระดับพรีเมียม",
+		PageBodyContent: "# UFABET คาสิโน 18+ แทงบอลกำไรดี มีพริตตี้ไลฟ์สดโชว์",
 
 		DatabaseFilePath: "data/owncast.db",
 
